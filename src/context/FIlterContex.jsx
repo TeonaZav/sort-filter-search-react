@@ -6,7 +6,7 @@ const FilterProvider = ({ children }) => {
   const [filterTerm, setFilterTerm] = useState("");
   const [filterGenres, setFilterGenres] = useState([]);
   const [filterYears, setFilterYears] = useState([]);
-  const [filterAge, setFilterAge] = useState("");
+  const [filterAge, setFilterAge] = useState("all");
   const [filterGender, setFilterGender] = useState([]);
   const [filterCities, setFilterCities] = useState([]);
   const [filterType, setFilterType] = useState("manual");
