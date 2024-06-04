@@ -39,4 +39,4 @@ npm run dev
 
 ## Links
 
-- Solution URL: https://sort-filter-search.vercel.app/
+- Solution URL: https://sort-filter-search-react.vercel.app/
