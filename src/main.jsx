@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import App from "./App.jsx";
 import Root, { loader as rootLoader } from "./routes/Root.jsx";
 import ErrorPage from "./routes/ErrorPage.jsx";
@@ -16,7 +16,7 @@ import {
   FilterProvider,
 } from "./context";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
@@ -26,7 +26,6 @@ const router = createBrowserRouter([
       {
         path: "movies",
         element: <Movies />,
-      
       },
       {
         index: true,
